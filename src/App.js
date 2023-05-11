@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { usercomp } from './apps/user';
+import Welcome from './apps/welcome';
+import Salaries from './apps/Salaries';
 function hello(user){
   if(user) {
     return <div>
@@ -49,18 +51,7 @@ const salaries =user.salaries.map((salary,index) => {
      
      <p>{c}, {name}</p>
  <usercomp user={user}/>
-     <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Salary</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-        {salaries}
-        </tbody>
-     </table>
+    
     </div>
   );
 }
